@@ -5,3 +5,7 @@ npm-debug.*
 *.p12
 *.key
 *.mobileprovision
+**/*.swp
+
+# 基本的にTypeScriptで書くため、コンパイル時に生成されるjsは不要
+**/*.js
