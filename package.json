@@ -1,6 +1,8 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
+    "tslint": "tslint src/App.tsx ",
+    "check": "tsc -p ./ --noEmitOnError -w",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -16,6 +18,10 @@
     "tslint-config-airbnb": "^5.11.1",
     "typescript": "^3.2.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/react-native": "^0.57.15",
+    "prettier": "^1.15.3",
+    "tslint-plugin-prettier": "^2.0.1"
+  },
   "private": true
 }
